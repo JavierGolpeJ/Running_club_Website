@@ -104,3 +104,61 @@ section {
     background-position: center;
     border-radius: 0.5rem;
 }
+
+/* Progress section */
+
+.progress {
+    grid-row: 3 / 3;
+    grid-column: 1 / 5;
+    display: grid;
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+    background-color: #d2d2d2;
+    border-color: black;
+    border-radius: 0.5rem;
+    color: #323131;
+}
+
+.progress ul {
+    list-style-type: none;
+}
+
+.progress img {
+    height: 3rem;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+}
+
+.progress-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.progress-content h2 {
+    font-size: 2rem;
+    padding: 0;
+    text-align: center;
+    margin: auto 0;
+}
+
+.progress-content ul {
+    text-align: center;
+    margin: auto 0;
+}
+
+.progress-content li {
+    background-color: #909090b9;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.icon {
+    margin: auto 0;
+}
