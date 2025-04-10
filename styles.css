@@ -162,3 +162,71 @@ section {
 .icon {
     margin: auto 0;
 }
+
+/* Event section */
+
+.events {
+    grid-row: 4 / 4;
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(49, 47, 47, 0.554);
+    border-color: black;
+}
+
+.events h2 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin: auto 0;
+}
+
+.events ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+.left p,
+.right p {
+    text-align: center;
+    margin: auto 0;
+    padding: .5rem;
+}
+
+.left h3,
+.right h3 {
+    text-align: center;
+}
+
+
+.left li {
+    /* width: 80%; */
+    background-color: #d2d2d2;
+    border-color: black;
+    border-radius: 0.5rem;
+    color: #323131;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.right li {
+    /* width: 80%; */
+    text-align: left;
+    background-color: #d2d2d2;
+    border-color: black;
+    border-radius: 0.5rem;
+    color: #323131;
+    padding: 0.5rem;
+    margin: 1rem;
+}
