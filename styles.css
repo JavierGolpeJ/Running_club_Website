@@ -6,19 +6,18 @@ html {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    width: 100%;
     background-color: #333;
     color: white;
-    /* padding: 1rem; */
     text-align: center;
     width: 100%;
-    padding: 0;
-    gap: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
 }
 
+
 main {
+    font-family: "Play", cursive, sans-serif;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -29,11 +28,22 @@ section {
     max-height: 400px;
 }
 
+.header div {
+    font-family: "Permanent Marker", cursive, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header a {
     display: flex;
     padding-left: 1.5rem;
     text-decoration: none;
     color: white;
+}
+
+.header a:hover {
+    color: #415a77;
 
 }
 
@@ -176,6 +186,7 @@ section {
 }
 
 .events h2 {
+    color: #333;
     font-size: 2rem;
     padding-top: 1rem;
     text-align: center;
@@ -229,4 +240,72 @@ section {
     color: #323131;
     padding: 0.5rem;
     margin: 1rem;
+}
+
+/* Route section */
+
+.routes {
+    grid-row: 5 / 5;
+    grid-column: 3 / 5;
+    display: grid;
+    background-color: #d2d2d2;
+    border-color: black;
+    border-radius: 0.5rem;
+    color: #323131;
+}
+
+.route-pic {
+    grid-row: 5 / 5;
+    grid-column: 1 / 3;
+}
+
+.route-content {
+    text-align: center;
+}
+
+.route-pic img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+}
+
+.route-content ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(29, 29, 46, 0.639);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    color: #f5f5f5;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    border-radius: .5rem;
+    margin-top: .75rem;
+}
+
+.footer ul {
+    display: inline-flex;
+    gap: 1rem;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer a {
+    font-family: "Permanent Marker", cursive, sans-serif;
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.footer a:hover {
+    color: #415a77;
 }

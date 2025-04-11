@@ -5,25 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MKE Running</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Play:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <h1><a href="#home">MKE Running</a></h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header" id="home">
+        <div>
+            <h1><a href="#home">MKE Running</a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#progress">Progress</a></li>
+                    <li><a href="#routes">Routes</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero">
             <img src="img/landscape-run.jpg" alt="People Running">
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-content">
                 <h2>About Us</h2>
                 <p>We are a community of runners in Milwaukee, dedicated to promoting health and fitness through
@@ -34,7 +41,7 @@
         <div class="about-image">
             <img src="img/Crowd-running.jpg" alt="Group of people running">
         </div>
-        <section class="progress">
+        <section class="progress" id="progress">
             <div class="progress-content">
                 <h2>Track Your Progress</h2>
                 <ul>
@@ -89,25 +96,39 @@
                 </div>
             </ul>
         </section>
-        <section class="Routes">
-            <h2>Routes</h2>
-            <ul>
-                <li>
-                    <h3>Lakefront Trail</h3>
-                    <p>A scenic route along the shores of Lake Michigan.</p>
-                </li>
-                <li>
-                    <h3>Kettle Moraine State Park</h3>
-                    <p>Beautiful trails through rolling hills and forests.</p>
-                </li>
-                <li>
-                    <h3>Hank Aaron State Trail</h3>
-                    <p>A paved trail perfect for running and biking.</p>
-                </li>
-            </ul>
+        <div class="route-pic">
+            <img src="img/road.jpg" alt="Long open road">
+        </div>
+        <section class="routes" id="routes">
+            <div class="route-content">
+                <h2>Routes</h2>
+                <ul>
+                    <li>
+                        <h3>Lakefront Trail</h3>
+                        <p>A scenic route along the shores of Lake Michigan.</p>
+                    </li>
+                    <li>
+                        <h3>Kettle Moraine State Park</h3>
+                        <p>Beautiful trails through rolling hills and forests.</p>
+                    </li>
+                    <li>
+                        <h3>Hank Aaron State Trail</h3>
+                        <p>A paved trail perfect for running and biking.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-
+    <footer>
+        <section class="footer">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#routes">Routes</a></li>
+            </ul>
+        </section>
+    </footer>
 </body>
 
 </html>
